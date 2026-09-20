@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flux-api"
+version = "0.1.0"
+description = "Python client for the FLUX API by Black Forest Labs — schnell, 1.1 pro, Kontext and FLUX.2 klein via a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "black-forest-labs-dev"}]
+keywords = ["ai api", "black forest labs", "black forest labs api", "black forest labs python", "flux-1.1-pro", "flux-2-klein-9b", "flux-kontext-pro", "flux-schnell", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/black-forest-labs-dev/flux-api"
+Documentation = "https://black-forest-labs-dev.github.io/flux-api/"
+"Hosted model" = "https://synexa.ai/explore/black-forest-labs/flux-schnell?utm_source=github&utm_medium=ugc&utm_campaign=black-forest-labs-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["flux_api*"]
